@@ -1,18 +1,11 @@
 # GMFundamentalMovement
 https://docs.google.com/document/d/1CwV4-9aAtIc-Yw8Ie-yGMkTBYnq2TTeHvfuSuwTkJaI/edit
 
-Mastering Game Maker Studio fundamentals
-
-Continually hone and document game ideas
-Develop resources to be able to create game art/sources
-Create a game
-Zaun Center Funding/SDSU Entrepreneur Pitch 
-SDSU Game Development Club
-Grow resources: Unity3d Professional, Photoshop, tablets, computers 
+Mastering Game Maker Studio Fundamentals
 
 
 Everything produced will be stored in a library-like structure
-Github will be formatted as such:
+
 
 /Current_Project/ construction zone, everything currently being worked on
 
