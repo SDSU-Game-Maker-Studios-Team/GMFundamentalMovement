@@ -1,0 +1,296 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<title>MapleSimulator | BannedStory Mobile</title>
+<meta property="og:title" content="BannedStory Mobile" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.maplesimulator.com/bs_mobile/" />
+<meta property="og:image" content="http://www.maplesimulator.com/bs_mobile/img/logo.png" />
+<meta property="og:site_name" content="MapleSimulator" />
+<meta property="og:description" content="BannedStory Mobile, the animated simulator of MapleStory characters for mobile devices." />
+<meta property="fb:admins" content="100004011556145" />
+
+<meta name="keywords" content="maplesimulator,bannedstory,maplestory,simulator,mmo,game,multiplayer" />
+<meta name="description" content="BannedStory Mobile, the animated simulator of MapleStory characters for mobile devices." />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon-precomposed" href="img/logo.png" />
+<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+
+<script type="text/javascript" src="js/c_wide.js?1460513938"></script>
+
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+<link type="text/css" rel="stylesheet" href="css/c_wide.css?1460513938" />
+
+<script type="text/javascript">
+var _gaq =_gaq||[];_gaq.push(['_setAccount','UA-2334413-4']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+</script>
+</head>
+
+<body class="wide-screen">
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=390193687711338";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="img-zoom">
+		<div class="img-zoom-msg">To save the image, right-click it and select "Save as". If on a mobile device, tap and hold the image until a save-image prompt appears. To share on Facebook, you must enable popups in your browser.</div>
+		<div class="img-zoom-inner"></div>
+		<div class="img-zoom-buttons">
+			<a href="#" class="btn-fb"></a>
+			<a href="#" class="btn btn-primary"><i class="icon-remove icon-white"></i> Close</a>
+		</div>
+	</div>
+	
+	<div id="blocker">
+		<div class="progress progress-striped active">
+			<div class="bar" style="width:100%;"></div>
+		</div>
+		<div class="blocker-bg"></div>
+	</div>
+	
+	<div id="canvas">
+		<div class="content"></div>
+		<div class="bg"></div>
+	</div>
+	
+		<div class="ad-container">
+		<div class="ad">
+		<script type="text/javascript">google_ad_client = "ca-pub-5683996950217315";google_ad_slot = "5264440349";google_ad_width = 728;google_ad_height = 90;google_page_url = "http://www.maplesimulator.com";</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>		</div>
+	</div>
+		
+	<div id="navigation" class="navbar navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="http://www.maplesimulator.com" target="_blank">
+					<img src="img/logo_top.png" />
+					<span>BannedStory Mobile</span>
+				</a>
+				
+				<ul class="nav pull-right">
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span>File </span>
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="nav-header"><i class="icon-picture"></i> Save Image</li>
+							<li><a data-menu="1" href="#">Selected Layer</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span>Layer </span>
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="nav-header"><i class="icon-plus-sign"></i> Clone</li>
+							<li><a data-menu="2" href="#">Selected Layer</a></li>
+							<li><a data-menu="3" href="#">Selected Layer States</a></li>
+							<li class="divider"></li>
+							<li><a data-menu="5" href="#"><i class="icon-trash"></i> Delete Layer</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span>Window </span>
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a data-menu="7" href="#"><i class="icon-th"></i> Thumbnail Gallery</a></li>
+							<li><a data-menu="10" href="#"><i class="icon-info-sign"></i> Properties Panel</a></li>
+						</ul>
+					</li>
+					<li>
+						<a id="btn-help" href="#">
+							<i class="icon-question-sign icon-white"></i>
+							<span>Help</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="help" class="win" style="display:inline;" >
+		<div class="win-inner">
+			<div class="win-header">
+				<button class="close" type="button">×</button>
+				<h3>Help</h3>
+			</div>
+			<div class="win-content">
+				<div class="scroll-holder">
+					<div class="scroll-content">
+						<div class="main">
+							<p>
+							<h4>Welcome to BannedStory Mobile, the animated simulator for mobile devices of the free-to-play, side-scrolling massively multiplayer online role-playing game <a target="_blank" href="http://www.maplestory.com/">MapleStory</a>!</h4>
+							</p>
+							
+														<div class="fb-box">
+								<p>Do you like BannedStory Mobile? Then share it with your friends!</p>
+								<div class="fb-box-btn">
+									<div class="fb-like" data-href="http://www.maplesimulator.com/bs_mobile" data-send="true" data-width="490" data-show-faces="true"></div>
+								</div>
+								<br/>
+								<p>You can also check <a target="_blank" href="https://www.facebook.com/maplesimulator.bannedstory">MapleSimulator on Facebook!</a></p>
+							</div>
+														
+							<img src="img/maplestory.png" />
+							
+							<p><strong>NOTICE: MapleStory-related materials used on this site are used with permission granted by Nexon America Inc.  All unauthorized uses of said material are otherwise prohibited. MapleSimulator is not affiliated with Nexon or Wizet in any way.</strong></p>
+							
+							<hr/>
+							
+							<p>With BannedStory Mobile, you can experience most of the cool features that you see in the <a href="http://www.maplesimulator.com/programs/bannedstory" target="_blank">regular BannedStory</a> right into your smart phone, tablet, or any modern mobile device.</p>
+							
+							<p><h4>Thumbnails</h4></p>
+							<p>You start with a blank canvas, which is the place where all your images will appear. To add an image, just click the "Thumbnails" section in the upper navigation bar.</p>
+							<img src="img/help1-1.gif" />
+							<p>The Thumbnails window will appear. First select the image category you want to use. After this, a list of all the thumbnails of the category you selected will appear.</p>
+							<img src="img/help2-1.gif" />
+							<p>Click on the image you want to add to the canvas. If you want to look up for more images, click on the "previous" and "next" buttons in the lower left corner of the Thumbnails window.</p>
+							<p><h4>Properties</h4></p>
+							<p>Whenever you click on an image, the properties panel will appear at the right side of the screen. In here, you can find the animation and transformation controls, as well as a inventory list of items of the selected image.</p>
+							<img src="img/help3-1.gif" />
+							<p><strong>Important!</strong> you must first click on the image you want to modify before changing its properties.</p>
+							<p>You can perform certain transformations on the image without using the properties panel. You can drag the image directly on the canvas, <b>you can also rotate and scale the image with touch gestures on the canvas</b>.</p>
+							<p><h4>Animation</h4></p>
+							<p>All images that you place in the canvas can be animated. After you have selected the image from the canvas that you want to animate, just click on the "Animate" button in the upper left corner of the properties panel.</p>
+							<img src="img/help5.gif" />
+							<img src="img/help6.gif" />
+							<p>The animate button will turn green when the selected image is animating. If you want to change the animation state of your image, click on the button next to the animation button to see all the available states.</p>
+							<p><strong>Important!</strong> in some mobile browsers you can't drag your image while it's animating. You need to stop the animation before dragging the image.</p>
+							<p><h4>Save Images</h4></p>
+							<p>You can save images from the canvas to a PNG file. To do so, select the image you want to save and then click "File > Save Selected Layer" in the top menu.</p>
+							<img src="img/help7-1.gif" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="win-footer">
+				<a href="#" data-btn="close" class="btn btn-primary"><i class="icon-remove icon-white"></i> Close</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="properties" class="panel">
+		<div class="panel-inner">
+			<div class="scroll-holder">
+				<div class="scroll-content">
+					<div class="panel-content">
+						<div class="section open">
+							<button class="btn-title btn btn-inverse noselect fit"><i class="icon-chevron-down icon-white"></i> Properties</button>
+							
+							<div class="section-content">
+								<div class="row-fluid">
+									<div class="span6">
+										<div class="preview">
+											<div class="preview-inner"></div>
+										</div>
+									</div>
+									<div class="span6">
+										<h5>Coordinates</h5>
+										<div id="ctr-txtcoords"></div>
+									</div>
+								</div>
+								
+								<h5>Animation</h5>
+								<div class="row-fluid">
+									<div class="btn-group pull-left">
+										<button id="ctr-animate" class="btn" data-toggle="button"><i class="icon-play"></i></button>
+										<select id="ctr-states" class="btn"></select>
+									</div>
+								</div>
+								
+								<h5>Rotation</h5>
+								<div class="row-fluid">
+									<div class="span4">
+										<button id="ctr-rotleft" class="btn fit"><i class="icon-repeat"></i></button>
+									</div>
+									<div class="span4">
+										<input id="ctr-rotval" type="text" class="fit" value="" placeholder="0" />
+									</div>
+									<div class="span4">
+										<button id="ctr-rotright" class="btn fit"><i class="icon-repeat"></i></button>
+									</div>
+								</div>
+								
+								<h5>Zoom</h5>
+								<div class="row-fluid">
+									<div class="span4">
+										<button id="ctr-zoomout" class="btn fit"><i class="icon-zoom-out"></i></button>
+									</div>
+									<div class="span4">
+										<input id="ctr-zoomval" type="text" class="fit" value="" placeholder="1" data-max="10" />
+									</div>
+									<div class="span4">
+										<button id="ctr-zoomin" class="btn fit"><i class="icon-zoom-in"></i></button>
+									</div>
+								</div>
+								
+								<h5>Flip</h5>
+								<div class="row-fluid">
+									<div class="span6">
+										<button id="ctr-rh" class="btn fit"><i class="icon-resize-horizontal"></i></button>
+									</div>
+									<div class="span6">
+										<button id="ctr-rv" class="btn fit"><i class="icon-resize-vertical"></i></button>
+									</div>
+								</div>
+								
+								<div class="row-fluid">
+									<div class="span6">
+										<button id="ctr-refresh" class="btn btn-info fit"><i class="icon-refresh icon-white"></i> Reset</button>
+									</div>
+									<div class="span6">
+										<button id="ctr-delete" class="btn btn-danger fit"><i class="icon-trash icon-white"></i> Delete</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="section">
+							<button class="btn-title btn btn-inverse noselect fit"><i class="icon-chevron-up icon-white"></i> Inventory</button>
+							<div class="section-content">
+								<div id="inventory-list">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="thumbs" class="win">
+		<div class="win-inner">
+			<div class="win-header">
+				<button class="close" type="button">×</button>
+				<h3>Thumbnails</h3>
+			</div>
+			<div class="clearfix">
+				<div class="thumb-nav win-content noselect">
+					<div class="scroll-holder">
+					<div class="scroll-content">
+					<div class="asset-group "><div class="asset-name btn btn-inverse"><span>Character</span></div><div class="asset-content"><ul data-ast="0" class="nav nav-list"><li class="nav-header">Body Items</li><li><a data-typ="0" href="#">Body</a></li><li><a data-typ="1" href="#">Head</a></li><li><a data-typ="2" href="#">Face Styles</a></li><li><a data-typ="3" href="#">Hair Styles</a></li><li class="nav-header">Accessories</li><li><a data-typ="4" href="#">Face Accessories</a></li><li><a data-typ="5" href="#">Eye Accessories</a></li><li><a data-typ="6" href="#">Ear Accessories</a></li><li class="nav-header">Equipment</li><li><a data-typ="7" href="#">Hat</a></li><li><a data-typ="8" href="#">Cape</a></li><li><a data-typ="9" href="#">Top</a></li><li><a data-typ="10" href="#">Overall</a></li><li><a data-typ="11" href="#">Glove</a></li><li><a data-typ="12" href="#">Bottom</a></li><li><a data-typ="13" href="#">Shield</a></li><li><a data-typ="14" href="#">Shoes</a></li><li class="nav-header">Weapons</li><li><a data-typ="28" href="#">Other</a></li><li><a data-typ="29" href="#">One Handed Sword</a></li><li><a data-typ="30" href="#">One Handed Axe</a></li><li><a data-typ="31" href="#">One Handed Mace</a></li><li><a data-typ="32" href="#">Dagger/Cutter</a></li><li><a data-typ="33" href="#">Wand</a></li><li><a data-typ="34" href="#">Staff</a></li><li><a data-typ="35" href="#">Two Handed Sword</a></li><li><a data-typ="36" href="#">Two Handed Axe</a></li><li><a data-typ="37" href="#">Two Handed Mace</a></li><li><a data-typ="38" href="#">Spear</a></li><li><a data-typ="39" href="#">Pole Arm</a></li><li><a data-typ="40" href="#">Bow</a></li><li><a data-typ="41" href="#">Crossbow</a></li><li><a data-typ="42" href="#">Claw</a></li><li><a data-typ="43" href="#">Knuckles</a></li><li><a data-typ="44" href="#">Guns</a></li><li><a data-typ="320" href="#">Dual Blade</a></li><li><a data-typ="440" href="#">Cannon Shooter</a></li><li><a data-typ="441" href="#">Dual Crossbow</a></li><li><a data-typ="442" href="#">Shovel</a></li><li><a data-typ="443" href="#">Wrench</a></li></ul></div></div><div class="asset-group open"><div class="asset-content"><ul data-ast="3" class="asset-name btn btn-inverse"><li><a data-typ="17" href="#">Pet</a></li></ul></div></div><div class="asset-group open"><div class="asset-content"><ul data-ast="4" class="asset-name btn btn-inverse"><li><a data-typ="22" href="#">Skill</a></li></ul></div></div><div class="asset-group "><div class="asset-name btn btn-inverse"><span>Mob</span></div><div class="asset-content"><ul data-ast="5" class="nav nav-list"><li><a data-typ="15" href="#">Taming Mob</a></li><li><a data-typ="19" href="#">Mob</a></li></ul></div></div><div class="asset-group open"><div class="asset-content"><ul data-ast="6" class="asset-name btn btn-inverse"><li><a data-typ="45" href="#">Effect</a></li></ul></div></div><div class="asset-group open"><div class="asset-content"><ul data-ast="7" class="asset-name btn btn-inverse"><li><a data-typ="54" href="#">Etc</a></li></ul></div></div><div class="asset-group open"><div class="asset-content"><ul data-ast="10" class="asset-name btn btn-inverse"><li><a data-typ="24" href="#">Morph</a></li></ul></div></div><div class="asset-group open"><div class="asset-content"><ul data-ast="11" class="asset-name btn btn-inverse"><li><a data-typ="20" href="#">NPC</a></li></ul></div></div>					</div>
+					</div>
+				</div>
+				<div class="thumb-list win-content noselect"></div>
+			</div>
+			<div class="win-footer">
+				<div class="simple-pager" data-pager="0">
+					<a href="#" id="thumbs-pag-left" class="btn"><i class="icon-chevron-left"></i> Prev</a>
+					<input id="thumbs-pag-val" type="text" maxlength="10" value="" />
+					<a href="#" id="thumbs-pag-right" class="btn">Next<i class="icon-chevron-right"></i></a>
+				</div>
+			
+				<a href="#" data-btn="close" class="btn btn-primary"><i class="icon-remove icon-white"></i> Close</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
