@@ -7,14 +7,14 @@ if (instance_exists(obj_player))
     {
         state = scr_enemy_chase_state;
         targetx = obj_player.x;
-        targety = obj_player.y;
+        targety = obj_player.y; 
     }
     else
     {
         scr_enemy_choose_next_state();
         if (scr_enemy_idle_state)
         {
-            sprite_index = spr_ditto_down;
+            face = DOWN;
         }
     }
 }

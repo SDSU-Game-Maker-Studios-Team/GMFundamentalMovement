@@ -633,5 +633,16 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
-  <ConfigConstants/>
+  <ConfigConstants>
+    <constants number="8">
+      <constant name="RIGHT">0</constant>
+      <constant name="NE">1</constant>
+      <constant name="UP">2</constant>
+      <constant name="NW">3</constant>
+      <constant name="LEFT">4</constant>
+      <constant name="SW">5</constant>
+      <constant name="DOWN">6</constant>
+      <constant name="SE">7</constant>
+    </constants>
+  </ConfigConstants>
 </Config>

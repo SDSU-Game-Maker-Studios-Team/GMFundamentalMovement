@@ -1,10 +1,13 @@
 ///scr_move_state
 scr_input_keys();
 
-if (dashkey)
+if (dashkey && obj_player_stats.stamina >= 5)
 {
     state = scr_dash_state;
     alarm[0] = room_speed/3;
+    obj_player_stats.stamina -= 5;
+    obj_player_stats.alarm[0] = room_speed;
+    
 }
 
 if (attackkey)
@@ -28,6 +31,7 @@ if (xaxis == 0 && yaxis == 0)
 else 
 {
     length = movespd;
+    scr_get_face();
 }
 
 //Declaring movement horizontal and vertical speed
@@ -46,19 +50,22 @@ image_index = 0;
 }
 
 //Animations Sprites
-if (vspd > 0)
-    sprite_index = spr_runningdown;
-else if (vspd < 0)
-    sprite_index = spr_runningup;
-if (hspd > 0)
-    sprite_index = spr_runningright;
-else if (hspd < 0)
-    sprite_index = spr_runningleft;
-if (downkey && rightkey)
-    sprite_index = spr_se;
-else if (downkey && leftkey)
-    sprite_index = spr_sw;
-if (upkey && rightkey)
-    sprite_index = spr_ne;
-else if (upkey && leftkey)
-    sprite_index = spr_nw; 
+switch (face)
+{
+    case RIGHT: sprite_index = spr_runningright;
+        break;
+    case NE: sprite_index = spr_ne;
+        break;
+    case UP: sprite_index = spr_runningup;
+        break;
+    case NW: sprite_index = spr_nw;
+        break;
+    case SW: sprite_index = spr_sw;
+        break;
+    case LEFT: sprite_index = spr_runningleft;
+        break;
+    case DOWN: sprite_index = spr_runningdown;
+        break;
+    case SE: sprite_index = spr_se;
+        break;
+}

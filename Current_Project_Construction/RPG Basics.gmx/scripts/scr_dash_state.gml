@@ -1,4 +1,9 @@
 ///scr_dash_state
+
+if (length == 0)
+{
+    dir = face * 45;
+}
 length = movespd * 3;
 
 //Declaring movement horizontal and vertical speed

@@ -36,6 +36,7 @@
     </sprites>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_damage</sprite>
+    <sprite>sprites\spr_exp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -44,6 +45,7 @@
   <scripts name="scripts">
     <scripts name="Input Scripts">
       <script>scripts\scr_input_keys.gml</script>
+      <script>scripts\scr_get_face.gml</script>
     </scripts>
     <scripts name="Player states">
       <script>scripts\scr_attack_state.gml</script>
@@ -52,6 +54,7 @@
     </scripts>
     <scripts name="Enemy State">
       <script>scripts\scr_enemy_idle_state.gml</script>
+      <script>scripts\scr_enemy_stall_state.gml</script>
       <script>scripts\scr_enemy_wander_state.gml</script>
       <script>scripts\scr_enemy_chase_state.gml</script>
       <scripts name="Enemy Helper Scripts">
@@ -68,6 +71,8 @@
     <object>objects\obj_ditto</object>
     <object>objects\obj_lifeform_parent</object>
     <object>objects\obj_damage</object>
+    <object>objects\obj_player_stats</object>
+    <object>objects\obj_exp</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_1</room>

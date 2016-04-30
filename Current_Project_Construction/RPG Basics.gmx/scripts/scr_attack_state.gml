@@ -1,22 +1,22 @@
 ///scr_attack_state
 image_speed = 0.2;
-switch (sprite_index)
-{
-    case spr_runningdown: sprite_index = spr_phy_att_down;
+switch (face)
+{    
+    case RIGHT: sprite_index = spr_phy_att_right;       
             break;
-    case spr_runningup: sprite_index = spr_phy_att_up;    
+    case NE: sprite_index = spr_phy_att_ne;      
             break;
-    case spr_runningleft: sprite_index = spr_phy_att_left;    
+    case UP: sprite_index = spr_phy_att_up;    
             break;
-    case spr_runningright: sprite_index = spr_phy_att_right;       
+    case NW: sprite_index = spr_phy_att_nw;
             break;
-    case spr_ne: sprite_index = spr_phy_att_ne;      
+    case LEFT: sprite_index = spr_phy_att_left;    
             break;
-    case spr_nw: sprite_index = spr_phy_att_nw;
+    case SW: sprite_index = spr_phy_att_sw;
             break;
-    case spr_se: sprite_index = spr_phy_att_se; 
+    case DOWN: sprite_index = spr_phy_att_down;
             break;
-    case spr_sw: sprite_index = spr_phy_att_sw;
+    case SE: sprite_index = spr_phy_att_se; 
             break;
 }
 
@@ -28,7 +28,7 @@ if (image_index >= 1 && attacked == false)
     {
         case spr_phy_att_down: 
             xx = x;
-            yy = y + 5;
+            yy = y + 10;
             break;
         case spr_phy_att_up:
             xx = x;
@@ -61,6 +61,7 @@ if (image_index >= 1 && attacked == false)
     }
     var damage = instance_create(xx, yy, obj_damage);
     damage.creator = id;
+    damage.damage = obj_player_stats.attackstr;
     attacked = true;
 }
 
